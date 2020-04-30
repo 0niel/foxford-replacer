@@ -1,5 +1,7 @@
 # foxford-replacer
 Автопрохождение теста через код элемента
+Зависимости: selenium
+
 ```
 usage: foxford_replacer.py [-h] [--email EMAIL] [--password PASSWORD] [--url URL]
 
