@@ -1,6 +1,7 @@
 # foxford-replacer
-Автопрохождение теста через код элемента
-Зависимости: selenium
+Автопрохождение теста через код элемента для скриншота учителю во время дистанта
+Зависимости: selenium, chrome web driver
+
 
 ```
 использование: foxford_replacer.py [-h] [--email EMAIL] [--password PASSWORD] [--url URL]
