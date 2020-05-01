@@ -3,12 +3,12 @@
 Зависимости: selenium
 
 ```
-usage: foxford_replacer.py [-h] [--email EMAIL] [--password PASSWORD] [--url URL]
+использование: foxford_replacer.py [-h] [--email EMAIL] [--password PASSWORD] [--url URL]
 
 optional arguments:
-  -h, --help                       show this help message and exit
-  --email EMAIL, -m EMAIL          email for you foxford account
-  --password PASSWORD, -p PASSWORD password for you foxford account
-  --url URL, -u URL                foxford test url
+  -h, --help               показать это вспомогательное сообщение и закрыть
+  --email EMAIL, -m        email для вашего аккаунта фоксфорда
+  --password PASSWORD, -p  пароль для вашего аккаунта фоксфорда
+  --url URL, -u            ссылка на страницу результата теста (--type 1) или ссылка на страницу теста (--type 2)
+  --type TYPE, -t          1 - замена уже пройденного теста, 2 - замена непройденного теста
 ```
-Перед началом нужно пройти тест на любой результат
