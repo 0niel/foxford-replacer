@@ -31,7 +31,7 @@ def main():
         
     browser = open_login(args.email, args.password)
     
-    confirm = input('Enter Y if you are logged in [y/n]:')
+    confirm = input('Enter Y if you are logged in [y/n]: ')
     
     if confirm.lower() == 'y':
         if browser.current_url == 'https://foxford.ru/dashboard':
@@ -79,7 +79,7 @@ def main():
 
                 browser.execute_script(re.sub("^\s+|\n|\r|\s+$", '', "document.getElementsByClassName('{0}')[0].innerHTML = \"{1}\"; document.getElementsByClassName('{2}')[1].innerHTML = '<p>Блестяще! Ни одной ошибки. Так держать!</p>'; document.getElementsByClassName('{3}')[0].innerHTML = \"{4}\"; document.getElementsByClassName('{5}')[0].innerText = 'Посмотреть задачи'".format(paper_root_class_name, html, final_text, points_class_name, points_score_text, button_class_name)))
             print("ok! Take a screenshot for your teacher!")
-            
+            browser.get_screenshot_as_file('results_screen.png') 
             while True:
                     continue
     else:
